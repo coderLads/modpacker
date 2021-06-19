@@ -1,7 +1,10 @@
 {
   "dependencies": {
+    "@types/node": "^15.12.4",
     "discord.js": "^12.5.3",
-    "eslint": "^7.29.0",
     "mc-curseforge-api": "^2.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.4"
   }
 }
