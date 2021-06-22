@@ -1,4 +1,4 @@
 /node_modules
-/mods
+/modpack
 keys.json
-*.js
+/src/*.js
