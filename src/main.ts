@@ -20,7 +20,7 @@ client.on('message', (msg) => {
 
   try {
     if (msg.content[0] === '!'
-       && msg.member.roles.cache.has('847891487597527050')) {
+      && msg.member.roles.cache.has('847891487597527050')) {
       if (msg.content === '!tallyTheVotes') tallyTheVotes(msg);
       else if (msg.content.split(' ')[0] === '!hajimete') hajimete(msg); // Start
       else handleLink(msg);
@@ -38,10 +38,10 @@ client.login(keys.token);
 function hajimete(msg: any): void {
   const version = msg.content.split(' ')[1];
   msg.channel.messages.fetch({ limit: 100 }).then((messages) => {
-    let deletionPromises = [];
+    const deletionPromises = [];
     messages.forEach((message) => {
       deletionPromises.push(message.delete());
-    })
+    });
     Promise.all(deletionPromises).then(() => {
       msg.channel.send(`Voting opening for a ${version} server.
         Please suggest mods for this version below by sending the curseforge
@@ -53,7 +53,7 @@ function hajimete(msg: any): void {
 function tallyTheVotes(msg: any): void {
   msg.channel.messages.fetch({ limit: 100 }).then((messages) => {
     messages.forEach((message) => {
-      if (message.content.startsWith("Voting")) return;
+      if (message.content.startsWith('Voting')) return;
       if (message.content === '!tallyTheVotes') return;
       const reactions = message.reactions.cache;
       const thumbsUp = reactions.find((reaction) => reaction.emoji.name === '👍');

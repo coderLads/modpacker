@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@types/node": "^15.12.4",
+    "better-twitch-app-api": "^1.0.0",
     "discord.js": "^12.5.3",
     "mc-curseforge-api": "^2.2.3",
     "node-fetch": "^2.6.1"

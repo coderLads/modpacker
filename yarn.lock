@@ -265,6 +265,13 @@ balanced-match@^1.0.0:
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
+better-twitch-app-api@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/better-twitch-app-api/-/better-twitch-app-api-1.0.0.tgz#c4aef70d5abcf7535dcc7f9a3557e58a7ca1521c"
+  integrity sha512-uU8np9ZvoN69Xjqc4swWHuWMZ411oqgPBvp7KJAM2NcbGrB/oqJcjgyEsjOcW/ndWqTwlLsAaY+kn2cZzc9KIg==
+  dependencies:
+    node-fetch-retry "^1.0.1"
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz"
@@ -1102,6 +1109,13 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
+
+node-fetch-retry@^1.0.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/node-fetch-retry/-/node-fetch-retry-1.1.1.tgz#b3d77b737e0bc6c053476d9b9753eb246a17a177"
+  integrity sha512-9/HnBfDx/kI4amxaTLeHFDCLX7XZd745TVUPwkS5Uqsdw7usgQiZcQVatsm/8KNeP8xo6gM5aImQwGlEcExsSw==
+  dependencies:
+    node-fetch "^2.6.1"
 
 node-fetch@^2.6.1:
   version "2.6.1"
